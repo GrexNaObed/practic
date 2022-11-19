@@ -1,0 +1,11 @@
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {  
+  width: 100%;
+  max-width: $cmw;
+  margin: 0 auto;
+  padding: 0 15px;
+}
