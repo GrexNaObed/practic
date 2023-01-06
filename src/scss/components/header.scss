@@ -4,6 +4,9 @@
     flex-direction: column;
     gap: 40px;
 
+    @include mq(375){
+      gap: 20px;
+    }
   }
 
   &__info {
@@ -12,6 +15,10 @@
     justify-content: space-between;
     gap: 15px;
     padding: 16px;
+
+    @include mq(665) {
+      flex-direction: column;
+    }
 
     font-weight: 400;
     font-size: 12px;
@@ -22,6 +29,10 @@
       align-items: center;
       gap: 33px;
 
+      @include mq(435) {
+        flex-direction: column;
+        gap: 13px;
+      }
     }
 
     &-link {
@@ -45,6 +56,14 @@
     justify-content: space-between;
     gap: 15px;
 
+    @include mq(665) {
+      flex-direction: column;
+    }
+
+    @include mq(375) {
+      flex-direction: row;
+    }
+
     &-logo {
       width: 100%;
       max-width: 175px;
@@ -61,6 +80,10 @@
       border-radius: 12px;
       width: 100%;
       max-width: 500px;
+
+      @include mq(375) {
+        display: none;
+      }
     }
 
     &-nav {
@@ -150,7 +173,20 @@
   &__categories {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
+
+    @include mq(665) {
+      align-items: center;
+      justify-content: center;
+      gap: 20px 40px;
+    }
+
+    @include mq(475) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
 
     &-item {
       display: flex;

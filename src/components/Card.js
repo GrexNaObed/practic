@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Button from './ui/button/Button'
 
 function Card({
@@ -8,6 +9,13 @@ function Card({
   description = '',
   price = ''
 }) {
+
+  const navigate = useNavigate()
+
+  const handleNavigate = () => {
+    navigate(`/dishes/1`)
+  }
+
   return (
     <div className="card">
       {
@@ -31,6 +39,7 @@ function Card({
         </div>
         <Button
           type='filled'
+          handleClick={handleNavigate}
         >
           Buy now
         </Button>

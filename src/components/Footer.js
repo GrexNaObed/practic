@@ -22,7 +22,10 @@ function Footer({
                       link
                         .urls
                         .map(url =>
-                          <li className="footer__link-item">
+                          <li
+                            key={ url.id }
+                            className="footer__link-item"
+                          >
                             <Link to={ `/${url.origin}` }>
                               { url.name }
                             </Link>

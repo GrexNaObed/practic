@@ -1,0 +1,14 @@
+.common_template {
+  height: inherit;
+  min-height: inherit;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    min-height: inherit;
+  }
+  &__content{
+    flex: 1 1 auto;
+  }
+}

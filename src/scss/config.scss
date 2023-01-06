@@ -6,7 +6,13 @@ body {
 
 .container {
   width: 100%;
+  height: inherit;
   max-width: $cmw;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+#root,
+.App {
+  height: inherit;
 }

@@ -12,6 +12,10 @@
 
   padding: 48px 32px 32px 32px;
 
+  @include mq(495){
+    padding: 24px 16px 16px 16px;
+  }
+
   &__top {
     display: flex;
     flex-direction: column;

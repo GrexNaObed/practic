@@ -1,5 +1,8 @@
 .footer {
   padding-bottom: 64px;
+  @include mq(475){
+    padding-bottom: 16px;
+  }
   &__inner {
     display: flex;
     flex-direction: column;

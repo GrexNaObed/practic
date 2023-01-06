@@ -4,6 +4,11 @@
     flex-direction: column;
     gap: 128px;
     padding: 64px 0;
+
+    @include mq(495) {
+      gap: 64px;
+      padding: 32px 0;
+    }
   }
 
   &__headline {
@@ -50,6 +55,10 @@
       font-size: 18px;
       line-height: 27px;
       color: #151515;
+
+      @include mq(355){
+        font-size: 14px;
+      }
     }
 
     &-wrapper {
@@ -57,12 +66,26 @@
       // align-items: flex-start;
       gap: 32px;
       padding: 9px 0;
+
+      @include mq(1024) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mq(645) {
+        grid-template-columns: 1fr;
+      }
     }
 
     &-huge {
       position: relative;
       width: 100%;
       max-width: 470px;
+
+      @include mq(1024) {
+        max-width: 100%;
+        // grid-area: main;
+      }
     }
 
     &-vertical {
@@ -71,6 +94,12 @@
       gap: 24px;
       width: 100%;
       max-width: 270px;
+
+      @include mq(1024) {
+        max-width: 100%;
+        align-items: flex-start;
+        // grid-area: vertical;
+      }
     }
 
     &-horizontals {
@@ -79,6 +108,11 @@
       gap: 32px;
       width: 100%;
       max-width: 370px;
+
+      @include mq(1024) {
+        max-width: 100%;
+        // grid-area: horizontal;
+      }
     }
   }
 
@@ -106,6 +140,11 @@
       border-radius: 12px;
       overflow: hidden;
       z-index: 2;
+
+      @include mq(645) {
+        position: relative;
+        padding-top: 100%;
+      }
 
       &>img {
         position: absolute;
@@ -213,6 +252,9 @@
       display: flex;
       flex-direction: column;
       gap: 8px;
+      @include mq(645){
+        align-items: flex-start;
+      }
     }
 
     &-tip {
@@ -269,7 +311,7 @@
     &-img {
       position: relative;
       width: 100%;
-      max-width: 96px;
+      // max-width: 96px;
       padding-top: 25.95%;
       // width: 96px;
       // height: 96px;

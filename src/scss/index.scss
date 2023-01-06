@@ -12,8 +12,12 @@
 @import './components/comments.scss';
 @import './components/footer.scss';
 
+// TEMPLATES
+@import './templates/common.scss';
+
 // PAGES
 @import './pages/main.scss';
+@import './pages/detail-product.scss';
 
 
 // ui
