@@ -1,9 +1,10 @@
 body {
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container {  
+.container {
   width: 100%;
   max-width: $cmw;
   margin: 0 auto;

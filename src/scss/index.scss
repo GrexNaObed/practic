@@ -1,4 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 @import './reset.scss';
 @import './vars.scss';
 @import './mixins.scss';
 @import './config.scss';
+
+// COMPONENTS
+@import './components/header.scss';
+@import './components/short-view.scss';
+@import './components/banner.scss';
+@import './components/card.scss';
+@import './components/comments.scss';
+@import './components/footer.scss';
+
+// PAGES
+@import './pages/main.scss';
+
+
+// ui
+@import './components/ui/button.scss';
